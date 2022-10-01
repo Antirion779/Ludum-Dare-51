@@ -24,6 +24,7 @@ public class MeteorSpawner : MonoBehaviour
                 GameObject instance = Instantiate(meteor, new Vector3(transform.position.x, Random.Range(-(spawnSize / 2), spawnSize / 2)), Quaternion.identity);
                 float size = Random.Range(1f, 2f);
                 instance.transform.localScale = new Vector3(size, size, 0);
+                Destroy(instance, 7f);
             }
         }
     }
@@ -33,10 +34,4 @@ public class MeteorSpawner : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(transform.position, new Vector2(2, spawnSize));
     }
-
-    private void OnTriggerEnter2D(Collider2D other){
-        if(other.CompareTag("Meteor")){
-           Destroy(other.gameObject);
-        }
-     }
 }

@@ -12,7 +12,7 @@ public class Cleaning : MonoBehaviour
     {
         if(collision.name == "Chiffon")
         {
-            sprite.color = new Color(1f, 1f, 1f, sprite.color.a - diff);
+            sprite.color = new Color(0.3443396f, 1.0f, 0.4134772f, sprite.color.a - diff);
             Debug.Log(sprite.color.a);
 
             if (sprite.color.a <= 0)
