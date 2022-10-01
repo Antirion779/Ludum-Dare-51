@@ -12,6 +12,7 @@ public class Meteor : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        gameObject.tag = "Meteor";
     }
 
     // Update is called once per frame

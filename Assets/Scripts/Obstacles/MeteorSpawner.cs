@@ -33,4 +33,10 @@ public class MeteorSpawner : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(transform.position, new Vector2(2, spawnSize));
     }
+
+    private void OnTriggerEnter2D(Collider2D other){
+        if(other.CompareTag("Meteor")){
+           Destroy(other.gameObject);
+        }
+     }
 }
