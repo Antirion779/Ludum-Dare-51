@@ -28,6 +28,7 @@ public class BoulonManager : MonoBehaviour
     {
         imageCapot = capot.gameObject.GetComponent<SpriteRenderer>();
         Reset();
+        //gameObject.SetActive(true);
         //is_active = true;
     }
 
@@ -44,6 +45,8 @@ public class BoulonManager : MonoBehaviour
         Color tempColor = imageCapot.color;
         tempColor.a = 1.0f;
         imageCapot.color = tempColor;
+
+        gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -79,7 +82,6 @@ public class BoulonManager : MonoBehaviour
                     }
                     if (nb_turn >= NBTurn){
                         Reset();
-                        gameObject.SetActive(false);
                     }
                 }else{
                     //disapear

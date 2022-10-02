@@ -951,6 +951,7 @@ MonoBehaviour:
   - {fileID: 2029207070}
   - {fileID: 786827652}
   - {fileID: 1853394773}
+  BaseMove: []
 --- !u!1 &2029207070
 GameObject:
   m_ObjectHideFlags: 0
