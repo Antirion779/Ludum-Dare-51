@@ -6,14 +6,14 @@ using TMPro;
 public class OpenContainer : MonoBehaviour
 {
 
-    public GameObject door, hole;
+    public GameObject door;
     public string[] listFuel = { "Coffee", "Water", "Gas" };
     public TextMeshProUGUI text;
 
     private void OnMouseDown()
     {
         door.SetActive(true);
-        hole.SetActive(true);
+        gameObject.SetActive(false);
 
         int tabValue = Random.Range(0, 3);
         text.text = listFuel[tabValue];

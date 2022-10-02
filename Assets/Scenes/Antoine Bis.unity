@@ -831,6 +831,10 @@ PrefabInstance:
       value: -----GameManager-----
       objectReference: {fileID: 0}
     - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
+      propertyPath: backGroundSpeed
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: tasks.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -844,7 +848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1394976449358320783, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 1394976449358320783, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: m_LocalPosition.y

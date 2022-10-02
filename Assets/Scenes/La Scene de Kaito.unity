@@ -382,6 +382,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4083081baf72774183beb2e5af506f5, type: 3}
+--- !u!1001 &1583689844494617721
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1583689845143551828, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
+      propertyPath: m_Name
+      value: -- ELECTRIC MANAGER --
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583689845143551828, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583689845143551830, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583689845143551830, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.8838243
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583689845143551830, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3773229
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583689845143551830, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0008549122
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583689845143551830, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583689845143551830, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583689845143551830, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583689845143551830, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583689845143551830, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583689845143551830, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583689845143551830, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
 --- !u!1001 &4462304069317778501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -511,6 +572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: -- FUEL MANAGER --
       objectReference: {fileID: 0}
+    - target: {fileID: 6951847285761221150, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6951847285761221151, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -559,6 +624,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 550960918}
+    - target: {fileID: 6951847287192586772, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951847287192586772, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
 --- !u!1001 &7013046614747494968
