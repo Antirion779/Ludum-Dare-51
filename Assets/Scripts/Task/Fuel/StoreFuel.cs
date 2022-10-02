@@ -40,7 +40,7 @@ public class StoreFuel : MonoBehaviour
             slider.value += fillSpeed;
             if(slider.value >= 1)
             {
-                manager.SetActive(false);
+                Destroy(manager, 1f);
             }
         }
     }

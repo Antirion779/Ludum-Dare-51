@@ -13,7 +13,7 @@ public class TacheManager : MonoBehaviour
         {
             if (!cleaning.isNettoye) return;
         }
-        gameObject.SetActive(false);
+        Destroy(gameObject, 1f);
     }
 
 }

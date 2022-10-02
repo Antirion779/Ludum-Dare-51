@@ -71,7 +71,8 @@ public class Wheel : MonoBehaviour
         if (nb_turn >= NBTurn)
         {
             coffeeCup.sprite = fullCoffee;
-            StartCoroutine(WaitBeforeRemove());
+            complete = true;
+            Destroy(manager.gameObject, 1f);
         }
     }
 
@@ -80,13 +81,6 @@ public class Wheel : MonoBehaviour
         coffeeShooter.sprite = coffeeShooterOn;
         yield return new WaitForSeconds(0.2f);
         coffeeShooter.sprite = coffeeShooterOff;
-    }
-
-    IEnumerator WaitBeforeRemove()
-    {
-        complete = true;
-        yield return new WaitForSeconds(1f);
-        manager.SetActive(false);
     }
 
 
