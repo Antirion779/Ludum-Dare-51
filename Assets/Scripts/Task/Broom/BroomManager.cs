@@ -10,7 +10,7 @@ public class BroomManager : MonoBehaviour
     {
         if(dust.Count == 0)
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject, 1f) ;
         }
     }
 }

@@ -4,28 +4,39 @@ using UnityEngine;
 
 public class MeteorSpawner : MonoBehaviour
 {
-
+    public static MeteorSpawner Instance;
     public int spawnSize;
     public GameObject meteor;
     public bool questActive = false;
+    public bool canSpawn = true;
 
-    void Start()
+    public List<GameObject> meteorsList;
+
+    private void Awake()
     {
-        StartCoroutine(SpawnMeteors());
+        if (Instance == null)
+            Instance = this;
+    }
+
+    void Update()
+    {
+        if (canSpawn)
+            StartCoroutine(SpawnMeteors());
+        
     }
 
     IEnumerator SpawnMeteors()
     {
-        while (true)
-        {
-            if (!questActive)
-            {
-                yield return new WaitForSeconds(2f);
-                GameObject instance = Instantiate(meteor, new Vector3(transform.position.x, Random.Range(-(spawnSize / 2), spawnSize / 2)), Quaternion.identity);
-                float size = Random.Range(1f, 2f);
-                instance.transform.localScale = new Vector3(size, size, 0);
-                Destroy(instance, 7f);
-            }
+        if (!questActive)
+        {          
+            canSpawn = false;
+            GameObject instance = Instantiate(meteor, new Vector3(transform.position.x, Random.Range(-(spawnSize / 2), spawnSize / 2)), Quaternion.identity);
+            meteorsList.Add(instance);
+            float size = Random.Range(1f, 2f);
+            instance.transform.localScale = new Vector3(size, size, 0);
+            Destroy(instance, 5f);
+            yield return new WaitForSeconds(2f);
+            canSpawn = true;
         }
     }
 
