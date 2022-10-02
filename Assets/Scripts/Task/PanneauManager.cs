@@ -1,19 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class PanneauManager : MonoBehaviour
 {
-    [SerializeField] private GameObject[] BaseDontMove;
+    [SerializeField] private List<GameObject> BaseDontMove;
     [SerializeField] private GameObject[] BaseMove;
+
+    [SerializeField] private int objectif;
 
 
     void OnEnable()
     {
         foreach (GameObject item in BaseMove)
         {
-            int x = Random.Range(-8, 8);
-            int y = Random.Range(2, 4);
+            int x = Random.Range(-7, 7);
+            int y;
+            if (x < -3 || x > 3)
+                y = Random.Range(2, 3);
+            else
+                y = Random.Range(2, 3);
 
             item.GetComponent<DragObject>().canBeDrag = true;
             item.transform.position = new Vector2(x, y);
@@ -23,17 +30,28 @@ public class PanneauManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach (GameObject item in BaseDontMove)
-        {
-            RaycastHit2D hit = Physics2D.Raycast(item.transform.position, Vector2.up, 2.0f);
-            Debug.DrawRay(item.transform.position, Vector2.up, Color.green);
-            if (hit.collider != null && hit.transform.name == item.transform.name)
-            {
-                //hit.collider.GetComponent<SpriteRenderer>().color = Color.green;
-                hit.collider.GetComponent<DragObject>().canBeDrag = false;
-                hit.transform.position = new Vector2(item.transform.position.x, item.transform.position.y + 2);
-            }
+        Check();
 
+        if (objectif == BaseMove.Length)
+        {
+            GameManager.Instance.reset();
+        }
+    }
+
+    private void Check()
+    {
+        for (int i = BaseDontMove.Count - 1 ; i >= 0; i--)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(BaseDontMove[i].transform.position, Vector2.up, 2.0f);
+            Debug.DrawRay(BaseDontMove[i].transform.position, Vector2.up, Color.green);
+            if (hit.collider != null && hit.transform.name == BaseDontMove[i].transform.name)
+            {
+                hit.collider.GetComponent<DragObject>().canBeDrag = false;
+                hit.transform.position = new Vector2(BaseDontMove[i].transform.position.x, BaseDontMove[i].transform.position.y + 2);
+                //Play Sound
+                objectif++;
+                BaseDontMove.Remove(BaseDontMove[i]);
+            }
         }
     }
 }
