@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     [Header("BackGround")]
     [SerializeField] private GameObject backGround;
-    [SerializeField] private int backGroundSpeed = 1;
+    [SerializeField] private float backGroundSpeed = 1;
 
     private bool resetChrono = true;
 
