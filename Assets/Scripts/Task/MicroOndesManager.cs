@@ -8,6 +8,7 @@ public class MicroOndesManager : MonoBehaviour
     public GameObject cup;
     public GameObject microWave;
     public GameObject microWaveArea;
+    public BoxCollider2D BC;
 
     public float colorSpeed = 0.01f;
 
@@ -26,6 +27,7 @@ public class MicroOndesManager : MonoBehaviour
     }
 
     void Reset(){
+        BC.enabled = true;
         is_active = false;
         is_zoom = false;
         gameObject.SetActive(false);
@@ -43,6 +45,7 @@ public class MicroOndesManager : MonoBehaviour
             if (!is_zoom){
                 if (!need_wait){                
                     need_wait = true;
+                    BC.enabled = false;
                 }
             }
         }
