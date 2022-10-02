@@ -10,7 +10,14 @@ public class MicroOndesManager : MonoBehaviour
     public GameObject microWaveArea;
     public BoxCollider2D BC;
 
+    public Vector2 pos_task_1 = new Vector3(0.7f, -2.1f);
+    public Vector2 pos_task_2 = new Vector3(-3.8f, -2.3f);
+
+    public Sprite dezoom_cup;
+    public Sprite dezoom;
+
     public float colorSpeed = 0.01f;
+    public bool is_first_task = true;
 
     bool is_active = false;
     bool is_zoom = false;
@@ -27,6 +34,17 @@ public class MicroOndesManager : MonoBehaviour
     }
 
     void Reset(){
+        if (is_first_task){
+            bg_rend.sprite = dezoom_cup;
+            microWaveArea.transform.position = pos_task_1;
+            MCWState.Reset();
+            MCWState.is_open = false;
+        }else{
+            bg_rend.sprite = dezoom;
+            microWaveArea.transform.position = pos_task_2;
+        }
+        cup.GetComponent<Rigidbody2D>().simulated = true;
+        microWave.GetComponent<BoxCollider2D>().enabled = true;
         BC.enabled = true;
         is_active = false;
         is_zoom = false;
@@ -38,6 +56,12 @@ public class MicroOndesManager : MonoBehaviour
         bg_rend.color = tempColor;
 
         Set_active(false);
+
+               
+ 
+
+        
+
     }
 
     private void OnMouseDown(){
@@ -66,8 +90,10 @@ public class MicroOndesManager : MonoBehaviour
                     }
                 }
             }else{
-                if ((!MCWState.is_open) && MCWState.is_filed){
-                    StartCoroutine(finish_task());
+                if (is_first_task){
+                    if ((!MCWState.is_open) && MCWState.is_filed){
+                        StartCoroutine(finish_task());
+                    }
                 }
             }
         }
@@ -78,9 +104,13 @@ public class MicroOndesManager : MonoBehaviour
         MCWState.is_active = b;
     }
 
-    IEnumerator finish_task(){
+    public IEnumerator finish_task(){
         Set_active(false);
-        yield return new WaitForSeconds(0.5f);
+
+        is_first_task = !is_first_task;
+        yield return new WaitForSeconds(2.0f);
         Reset();
+        gameObject.SetActive(true);
+        is_active = true;
     }
 }
