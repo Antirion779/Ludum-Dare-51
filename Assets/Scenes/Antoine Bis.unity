@@ -836,12 +836,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: tasks.Array.size
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: tasks.Array.data[0]
       value: 
       objectReference: {fileID: 406279622063670979, guid: d9b50f2adc392264bb0f037449bdca4a, type: 3}
+    - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
+      propertyPath: tasks.Array.data[1]
+      value: 
+      objectReference: {fileID: 440902063976260524, guid: d4083081baf72774183beb2e5af506f5, type: 3}
+    - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
+      propertyPath: tasks.Array.data[2]
+      value: 
+      objectReference: {fileID: 4462304070062060185, guid: c1ef961d00de7cf4886efee0d9134ce6, type: 3}
+    - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
+      propertyPath: tasks.Array.data[3]
+      value: 
+      objectReference: {fileID: 1583689845143551828, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
+    - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
+      propertyPath: tasks.Array.data[4]
+      value: 
+      objectReference: {fileID: 6796139473634080980, guid: c6c591de6c65127489b40dd1e81e1c89, type: 3}
+    - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
+      propertyPath: tasks.Array.data[5]
+      value: 
+      objectReference: {fileID: 6951847285761221150, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
+    - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
+      propertyPath: tasks.Array.data[6]
+      value: 
+      objectReference: {fileID: 7013046614891612149, guid: 3362e1a3826f5924b8efc830ba175441, type: 3}
+    - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
+      propertyPath: tasks.Array.data[7]
+      value: 
+      objectReference: {fileID: 411096312153234609, guid: f75bb18260734dc45b9c635cba05d242, type: 3}
     - target: {fileID: 1394976449358320783, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: m_RootOrder
       value: 2
