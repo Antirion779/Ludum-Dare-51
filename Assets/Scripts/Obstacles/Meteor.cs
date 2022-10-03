@@ -24,7 +24,7 @@ public class Meteor : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            GameManager.Instance.Kill();
+            StartCoroutine(GameManager.Instance.Kill());
         }
     }
 }

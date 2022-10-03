@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float backGroundSpeed = 1;
 
     public float increaseSpeed = 0.05f;
+    public GameObject pauseMenu;
+    public SpriteRenderer redAlert;
 
     public bool resetChrono = true;
 
@@ -32,6 +34,12 @@ public class GameManager : MonoBehaviour
             StartCoroutine(Chrono());
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pauseMenu.SetActive(!pauseMenu.activeInHierarchy);
+            Time.timeScale = pauseMenu.activeInHierarchy ? 0 : 1;
+        }
+
         backGround.GetComponent<Renderer>().material.mainTextureOffset += new Vector2(backGroundSpeed * Time.deltaTime, 0);
     }
 
@@ -39,11 +47,24 @@ public class GameManager : MonoBehaviour
     {
         resetChrono = false;
         Debug.Log("Before");
-        yield return new WaitForSecondsRealtime(10.0f);
-
+        yield return new WaitForSeconds(8f);
+        StartCoroutine(Alert());
+        yield return new WaitForSeconds(2f);
         StartTask();
         Debug.Log("After");
         //lance un mini jeu
+    }
+
+    IEnumerator Alert()
+    {
+        redAlert.color = new Color(1, 0, 0, 0.2f);
+        yield return new WaitForSeconds(0.7f);
+        redAlert.color = new Color(1, 0, 0, 0f);
+        yield return new WaitForSeconds(0.3f);
+        redAlert.color = new Color(1, 0, 0, 0.2f);
+        yield return new WaitForSeconds(0.7f);
+        redAlert.color = new Color(1, 0, 0, 0f);
+        yield return new WaitForSeconds(0.3f);
     }
 
     private void StartTask()
@@ -72,9 +93,14 @@ public class GameManager : MonoBehaviour
     public IEnumerator Kill()
     {
         Time.timeScale = 0f;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSecondsRealtime(1f);
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Antoine Bis");
+        Application.LoadLevel(Application.loadedLevel);
+    }
+
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("MainScene");
     }
 
 }

@@ -33,7 +33,7 @@ public class MeteorSpawner : MonoBehaviour
             canSpawn = false;
             GameObject instance = Instantiate(meteor, new Vector3(transform.position.x, Random.Range(-(spawnSize / 2), spawnSize / 2)), Quaternion.identity);
             meteorsList.Add(instance);
-            float size = Random.Range(1f, 2f);
+            float size = Random.Range(0.15f, 0.5f);
             instance.transform.localScale = new Vector3(size, size, 0);
             instance.GetComponent<Meteor>().speed = meteorSpeed;
             Destroy(instance, 10f);

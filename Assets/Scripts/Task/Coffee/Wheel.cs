@@ -33,7 +33,7 @@ public class Wheel : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Vector2 mousePoint = Input.mousePosition;
-            mousePoint -= new Vector2((Screen.width / 2) + 25, (Screen.height / 2) + 40);
+            mousePoint -= new Vector2((Screen.width / 2) + 30, (Screen.height / 2) + 30);
             if (mousePoint != targetPoint)
             {
                 Vector2 newVector = mousePoint - targetPoint;
