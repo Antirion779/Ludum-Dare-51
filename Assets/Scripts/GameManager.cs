@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public float increaseSpeed = 0.05f;
     public GameObject pauseMenu;
     public SpriteRenderer redAlert;
+    public GameObject taskComplete;
 
     public bool resetChrono = true;
 
@@ -34,7 +35,7 @@ public class GameManager : MonoBehaviour
             StartCoroutine(Chrono());
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && currentTask == null)
         {
             pauseMenu.SetActive(!pauseMenu.activeInHierarchy);
             Time.timeScale = pauseMenu.activeInHierarchy ? 0 : 1;
@@ -93,6 +94,7 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator reset_corut(){
         SoundManager.Instance.PlaySound("taskout");
+        if (taskComplete != null) taskComplete.SetActive(true);
         yield return new WaitForSeconds(1f);
         SoundManager.Instance.PlaySound("taskout2");
 
