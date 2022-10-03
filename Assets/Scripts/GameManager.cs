@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject backGround;
     [SerializeField] private float backGroundSpeed = 1;
 
+    public float increaseSpeed = 0.05f;
+
     private bool resetChrono = true;
 
     private void Awake()
@@ -60,8 +62,8 @@ public class GameManager : MonoBehaviour
 
     public void reset()
     {
-        Destroy(currentTask);
         resetChrono = true;
         MeteorSpawner.Instance.questActive = false;
+        MeteorSpawner.Instance.meteorSpeed += increaseSpeed;
     }
 }

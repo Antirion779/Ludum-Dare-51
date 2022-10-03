@@ -9,6 +9,7 @@ public class MeteorSpawner : MonoBehaviour
     public GameObject meteor;
     public bool questActive = false;
     public bool canSpawn = true;
+    public float meteorSpeed = 0.35f;
 
     public List<GameObject> meteorsList;
 
@@ -34,7 +35,8 @@ public class MeteorSpawner : MonoBehaviour
             meteorsList.Add(instance);
             float size = Random.Range(1f, 2f);
             instance.transform.localScale = new Vector3(size, size, 0);
-            Destroy(instance, 5f);
+            instance.GetComponent<Meteor>().speed = meteorSpeed;
+            Destroy(instance, 10f);
             yield return new WaitForSeconds(2f);
             canSpawn = true;
         }

@@ -14,6 +14,7 @@ public class StoreFuel : MonoBehaviour
     public float fillSpeed = 0.01f;
     public float totalFill = 0f;
     public static StoreFuel Instance;
+    public GameObject fill;
 
     public GameObject coffee, water, gas;
 
@@ -47,10 +48,13 @@ public class StoreFuel : MonoBehaviour
         if (currentFuel == fuelAccepted)
         {
             totalFill += fillSpeed;
-            if(totalFill >= 1)
+            if(totalFill > 1)
             {
                 GameManager.Instance.reset();
                 Destroy(manager, 1f);
+            } else
+            {
+                fill.transform.localScale = new Vector3(totalFill, fill.transform.localScale.y, fill.transform.localScale.z);
             }
         }
     }

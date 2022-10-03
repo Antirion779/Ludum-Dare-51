@@ -290,6 +290,7 @@ MonoBehaviour:
   meteor: {fileID: 1343974624023571212, guid: 84d9009af21e60441af391f919cf6287, type: 3}
   questActive: 0
   canSpawn: 1
+  meteorSpeed: 2
   meteorsList: []
 --- !u!61 &945127125
 BoxCollider2D:
@@ -826,6 +827,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 885405282, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.04
+      objectReference: {fileID: 0}
     - target: {fileID: 1394976449358320781, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: m_Name
       value: -----GameManager-----
@@ -836,7 +841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: tasks.Array.size
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: tasks.Array.data[0]
@@ -865,11 +870,11 @@ PrefabInstance:
     - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: tasks.Array.data[6]
       value: 
-      objectReference: {fileID: 7013046614891612149, guid: 3362e1a3826f5924b8efc830ba175441, type: 3}
+      objectReference: {fileID: 6951847285761221150, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
     - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: tasks.Array.data[7]
       value: 
-      objectReference: {fileID: 411096312153234609, guid: f75bb18260734dc45b9c635cba05d242, type: 3}
+      objectReference: {fileID: 411096312153234609, guid: 30ab5feae0647294c8131183699cea2c, type: 3}
     - target: {fileID: 1394976449358320783, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: m_RootOrder
       value: 2

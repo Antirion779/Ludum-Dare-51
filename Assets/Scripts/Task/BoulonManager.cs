@@ -83,6 +83,7 @@ public class BoulonManager : MonoBehaviour
                         was_pressed = false;
                     }
                     if (nb_turn >= NBTurn){
+                        GameManager.Instance.reset();
                         Reset();
                     }
                 }else{

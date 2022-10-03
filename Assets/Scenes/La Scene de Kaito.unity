@@ -325,6 +325,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1330094511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 539837399704648179, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
+  m_PrefabInstance: {fileID: 6951847286586962942}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &440902063806006351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -584,9 +589,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1857556267654592525, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919867701504176538, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
+      propertyPath: fill
+      value: 
+      objectReference: {fileID: 1330094511}
+    - target: {fileID: 6951847285659719699, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6951847285761221150, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
       propertyPath: m_Name
       value: -- FUEL MANAGER --
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951847285761221150, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6951847285761221151, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
       propertyPath: m_RootOrder
@@ -630,6 +651,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6951847285761221151, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8591551108797059697, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8622947237407734744, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
+      propertyPath: m_LocalScale.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
