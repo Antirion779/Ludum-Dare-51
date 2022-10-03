@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7234476264678545906}
   - component: {fileID: 5648556242134888843}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: quest_window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 72232212279236227}
   - component: {fileID: 7638473381875126771}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: quest_window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 4462304068818590376}
   - component: {fileID: 5778713147291602928}
   - component: {fileID: 5222357122138609434}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "Volant \xE0 tourner"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,7 +524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4462304069178897639}
   - component: {fileID: 4462304069178897638}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -608,7 +608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4462304069841796653}
   - component: {fileID: 4462304069841796652}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tabouret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -692,7 +692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4462304070013407218}
   - component: {fileID: 4462304070013407229}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CoffeeShooter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -776,7 +776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4462304070062060184}
   - component: {fileID: 3556475073454102201}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: -- COFFEE MANAGER --
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -823,7 +823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4462304070478121105}
   - component: {fileID: 4462304070478121104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -906,7 +906,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8108735469226572802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Screen2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -944,7 +944,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1023760729305523947}
   - component: {fileID: 9011451439075528632}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "machine \xE0 caf\xE9 full"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1027,7 +1027,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1244084407290256643}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Screen1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

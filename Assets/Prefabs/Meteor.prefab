@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6105532715094644868}
   - component: {fileID: 2971743353919886546}
   - component: {fileID: 7901254716820077583}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Meteor
   m_TagString: Meteor
   m_Icon: {fileID: 0}

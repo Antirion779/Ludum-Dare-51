@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3667738426124399606}
   - component: {fileID: 2862130063613430327}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: quest_window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7013046614066168814}
   - component: {fileID: 7013046614066168815}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "Vitre \xE0 briser"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7013046614297053740}
   - component: {fileID: 7013046614297053741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "Fen\xEAtre"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7013046614557700610}
   - component: {fileID: 7013046614557700611}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,7 +349,7 @@ GameObject:
   - component: {fileID: 7013046614677672010}
   - component: {fileID: 7013046614677672009}
   - component: {fileID: 7013046614677672008}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tache2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -464,7 +464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7013046614891612150}
   - component: {fileID: 7013046614891612151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: -- TACHE MANAGER --
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,7 +520,7 @@ GameObject:
   - component: {fileID: 7013046615178177970}
   - component: {fileID: 7013046615178177969}
   - component: {fileID: 7013046615178177968}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tache1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -637,7 +637,7 @@ GameObject:
   - component: {fileID: 7013046615596090517}
   - component: {fileID: 7013046615596090519}
   - component: {fileID: 7013046615596090518}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Vitre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -767,7 +767,7 @@ GameObject:
   - component: {fileID: 7013046615620121610}
   - component: {fileID: 7013046615620121609}
   - component: {fileID: 7013046615620121611}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chiffon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

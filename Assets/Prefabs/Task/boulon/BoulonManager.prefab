@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3631639979923128913}
   - component: {fileID: 5516047309492371711}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: boulon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3900599557531388967}
   - component: {fileID: 8065869502656774677}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BoulonManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 46503503666230861}
   - component: {fileID: 7340482346948732963}
   - component: {fileID: 7128035845945137530}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: capot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,7 +249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6950420374641489544}
   - component: {fileID: 4263530171402289489}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: circuit
   m_TagString: Untagged
   m_Icon: {fileID: 0}

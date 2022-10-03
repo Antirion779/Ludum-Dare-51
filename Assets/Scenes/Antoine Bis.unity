@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 59044443}
   - component: {fileID: 59044444}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 319825554}
   - component: {fileID: 319825556}
   - component: {fileID: 319825555}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,6 +344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedLines
       objectReference: {fileID: 0}
+    - target: {fileID: 8998563275492867771, guid: 8eb6518d90dc97b4b8ba58b7c27db866, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8998563275492867774, guid: 8eb6518d90dc97b4b8ba58b7c27db866, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -401,7 +405,7 @@ GameObject:
   - component: {fileID: 659483098}
   - component: {fileID: 659483100}
   - component: {fileID: 659483099}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -656,7 +660,7 @@ GameObject:
   - component: {fileID: 945127123}
   - component: {fileID: 945127124}
   - component: {fileID: 945127125}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MeteorSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -734,7 +738,7 @@ GameObject:
   - component: {fileID: 964299609}
   - component: {fileID: 964299608}
   - component: {fileID: 964299607}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -873,7 +877,7 @@ GameObject:
   - component: {fileID: 1071615174}
   - component: {fileID: 1071615173}
   - component: {fileID: 1071615172}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -977,7 +981,7 @@ GameObject:
   - component: {fileID: 1081442571}
   - component: {fileID: 1081442575}
   - component: {fileID: 1081442576}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rocket
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1393,7 +1397,7 @@ GameObject:
   - component: {fileID: 1205942311}
   - component: {fileID: 1205942313}
   - component: {fileID: 1205942312}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1527,7 +1531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1341708493}
   - component: {fileID: 1341708492}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Alert
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1744,6 +1748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocket Particles
       objectReference: {fileID: 0}
+    - target: {fileID: 2522254618728494105, guid: fc8aacea86c41184f97433b4cf9e0f74, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2522254618728494106, guid: fc8aacea86c41184f97433b4cf9e0f74, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1813,7 +1821,7 @@ GameObject:
   - component: {fileID: 1431931206}
   - component: {fileID: 1431931208}
   - component: {fileID: 1431931207}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1946,7 +1954,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1460619160}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: -- OBJECTS --
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1985,7 +1993,7 @@ GameObject:
   - component: {fileID: 1561089272}
   - component: {fileID: 1561089274}
   - component: {fileID: 1561089273}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ScreenLimits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2070,7 +2078,7 @@ GameObject:
   - component: {fileID: 1666389155}
   - component: {fileID: 1666389157}
   - component: {fileID: 1666389156}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2172,7 +2180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: tasks.Array.size
+<<<<<<< Updated upstream
       value: 8
+=======
+      value: 10
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: tasks.Array.data[0]
@@ -2201,10 +2213,21 @@ PrefabInstance:
     - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: tasks.Array.data[6]
       value: 
-      objectReference: {fileID: 406279622063670979, guid: d9b50f2adc392264bb0f037449bdca4a, type: 3}
+      objectReference: {fileID: 6951847285761221150, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
     - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: tasks.Array.data[7]
       value: 
+<<<<<<< Updated upstream
+=======
+      objectReference: {fileID: 3582536667474389729, guid: af27a25a63b65a54da1def6954c2be75, type: 3}
+    - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
+      propertyPath: tasks.Array.data[8]
+      value: 
+      objectReference: {fileID: 406279622063670979, guid: d9b50f2adc392264bb0f037449bdca4a, type: 3}
+    - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
+      propertyPath: tasks.Array.data[9]
+      value: 
+>>>>>>> Stashed changes
       objectReference: {fileID: 411096312153234609, guid: 30ab5feae0647294c8131183699cea2c, type: 3}
     - target: {fileID: 1394976449358320783, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: m_RootOrder
@@ -2263,6 +2286,7 @@ GameObject:
   - component: {fileID: 1711527471}
   - component: {fileID: 1711527470}
   - component: {fileID: 1711527472}
+  - component: {fileID: 1711527473}
   - component: {fileID: 1711527469}
   m_Layer: 0
   m_Name: -- SOUND MANAGER --
@@ -2498,6 +2522,102 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &1711527473
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711527468}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1737132823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2588,7 +2708,7 @@ GameObject:
   - component: {fileID: 2052696621}
   - component: {fileID: 2052696623}
   - component: {fileID: 2052696622}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Windows95
   m_TagString: Untagged
   m_Icon: {fileID: 0}
