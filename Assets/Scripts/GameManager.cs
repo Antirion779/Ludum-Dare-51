@@ -7,13 +7,11 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     [SerializeField] private GameObject[] tasks;
-<<<<<<< Updated upstream
+
     [SerializeField] public GameObject currentTask;
-=======
-    [SerializeField] private GameObject currentTask;
-    private int lastTask;
-    private int lastTaskBis; //eh c'est horrible faut jamais faire ça !!!! mais vas-y j'ai faim faut que je finisse ça rapidement 
->>>>>>> Stashed changes
+
+    [SerializeField] private int lastTask;
+    [SerializeField] private int lastTaskBis; //eh c'est horrible faut jamais faire ça !!!! mais vas-y j'ai faim faut que je finisse ça rapidement 
 
     [Header("BackGround")]
     [SerializeField] private GameObject backGround;
@@ -82,11 +80,12 @@ public class GameManager : MonoBehaviour
         lastTaskBis = lastTask;
         lastTask = i;
 
-        Debug.Log(lastTask + " / " + lastTaskBis);
+        Debug.Log("Current task : " + i +" / lastTask : " + lastTask + " / lastTaskBis : " + lastTaskBis);
 
-        while (lastTask == i)
+        while (lastTask == i || lastTaskBis == i)
             i = Random.Range(0, tasks.Length);
 
+        lastTask = i;
 
         currentTask = Instantiate(tasks[i]);
         MeteorSpawner.Instance.questActive = true;
