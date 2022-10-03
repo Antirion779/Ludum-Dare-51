@@ -26,7 +26,7 @@ public class RocketMovement : MonoBehaviour
     private void Update()
     {
 
-        rb.velocity = new Vector2(0, Input.GetAxis("Horizontal") * speedLimit);
+        rb.velocity = new Vector2(0, Input.GetAxis("Vertical") * speedLimit);
     }
 
 }

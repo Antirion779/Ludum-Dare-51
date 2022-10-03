@@ -21,7 +21,7 @@ public class RocketScoring : MonoBehaviour
         cooldown -= Time.deltaTime; 
         if (GameManager.Instance.currentTask == null && cooldown < 0)
         {
-            score++;
+            score += addScore;
             cooldown = 1f;
         }
         text.text = "" + score;
