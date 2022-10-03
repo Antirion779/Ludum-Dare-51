@@ -83,7 +83,10 @@ public class GameManager : MonoBehaviour
         Debug.Log("Current task : " + i +" / lastTask : " + lastTask + " / lastTaskBis : " + lastTaskBis);
 
         while (lastTask == i || lastTaskBis == i)
+        {
             i = Random.Range(0, tasks.Length);
+            Debug.Log("IGFDIBFVZOIUEBFIOZEBFIZOEBFZOIEFBZEFBOZ");
+        }
 
         lastTask = i;
 
