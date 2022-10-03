@@ -88,6 +88,14 @@ public class GameManager : MonoBehaviour
 
     public void reset()
     {
+        StartCoroutine(reset_corut());
+    }
+
+    public IEnumerator reset_corut(){
+        SoundManager.Instance.PlaySound("taskout");
+        yield return new WaitForSeconds(1f);
+        SoundManager.Instance.PlaySound("taskout2");
+
         resetChrono = true;
         RocketScoring.Instance.score += RocketScoring.Instance.taskAddScore;
         MeteorSpawner.Instance.questActive = false;
