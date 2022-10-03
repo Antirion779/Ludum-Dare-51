@@ -6,18 +6,18 @@ using TMPro;
 public class OpenContainer : MonoBehaviour
 {
 
-    public GameObject door;
+    public GameObject door, fillbar;
     public string[] listFuel = { "Coffee", "Water", "Gas" };
-    public TextMeshProUGUI text;
 
     private void OnMouseDown()
     {
         door.SetActive(true);
-        gameObject.SetActive(false);
+        fillbar.SetActive(true);
 
         int tabValue = Random.Range(0, 3);
-        text.text = listFuel[tabValue];
+        StoreFuel.Instance.fuelAccepted = listFuel[tabValue];
+        StoreFuel.Instance.ActivateFuel();
 
-        Destroy(this);
+        Destroy(gameObject);
     }
 }

@@ -380,6 +380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: -- BROOM MANAGER --
       objectReference: {fileID: 0}
+    - target: {fileID: 440902063976260524, guid: d4083081baf72774183beb2e5af506f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4083081baf72774183beb2e5af506f5, type: 3}
 --- !u!1001 &1583689844494617721
@@ -498,6 +502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: -- COFFEE MANAGER --
       objectReference: {fileID: 0}
+    - target: {fileID: 4462304070062060185, guid: c1ef961d00de7cf4886efee0d9134ce6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1ef961d00de7cf4886efee0d9134ce6, type: 3}
 --- !u!1001 &6796139474151407581
@@ -511,17 +519,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: -- FILE MANAGER --
       objectReference: {fileID: 0}
+    - target: {fileID: 6796139473634080980, guid: c6c591de6c65127489b40dd1e81e1c89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6796139473634080983, guid: c6c591de6c65127489b40dd1e81e1c89, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6796139473634080983, guid: c6c591de6c65127489b40dd1e81e1c89, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796139473634080983, guid: c6c591de6c65127489b40dd1e81e1c89, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.297798
+      value: 2.2977982
       objectReference: {fileID: 0}
     - target: {fileID: 6796139473634080983, guid: c6c591de6c65127489b40dd1e81e1c89, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.94831544
+      value: -0.9483154
       objectReference: {fileID: 0}
     - target: {fileID: 6796139473634080983, guid: c6c591de6c65127489b40dd1e81e1c89, type: 3}
       propertyPath: m_LocalPosition.z
@@ -533,15 +549,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6796139473634080983, guid: c6c591de6c65127489b40dd1e81e1c89, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6796139473634080983, guid: c6c591de6c65127489b40dd1e81e1c89, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6796139473634080983, guid: c6c591de6c65127489b40dd1e81e1c89, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6796139473634080983, guid: c6c591de6c65127489b40dd1e81e1c89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -571,10 +587,6 @@ PrefabInstance:
     - target: {fileID: 6951847285761221150, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
       propertyPath: m_Name
       value: -- FUEL MANAGER --
-      objectReference: {fileID: 0}
-    - target: {fileID: 6951847285761221150, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6951847285761221151, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
       propertyPath: m_RootOrder
@@ -620,18 +632,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6951847286796957070, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 550960918}
-    - target: {fileID: 6951847287192586772, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6951847287192586772, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
 --- !u!1001 &7013046614747494968
@@ -644,6 +644,10 @@ PrefabInstance:
     - target: {fileID: 7013046614891612149, guid: 3362e1a3826f5924b8efc830ba175441, type: 3}
       propertyPath: m_Name
       value: -- TACHE MANAGER --
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013046614891612149, guid: 3362e1a3826f5924b8efc830ba175441, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7013046614891612150, guid: 3362e1a3826f5924b8efc830ba175441, type: 3}
       propertyPath: m_RootOrder

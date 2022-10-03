@@ -46,6 +46,10 @@ public class PanneauManager : MonoBehaviour
             Debug.DrawRay(BaseDontMove[i].transform.position, Vector2.up, Color.green);
             if (hit.collider != null && hit.transform.name == BaseDontMove[i].transform.name)
             {
+                if(hit.transform.name == "3")
+                {
+                    SoundManager.Instance.PlaySound("doorclose");
+                }
                 hit.collider.GetComponent<DragObject>().canBeDrag = false;
                 hit.transform.position = new Vector2(BaseDontMove[i].transform.position.x, BaseDontMove[i].transform.position.y + 2);
                 //Play Sound

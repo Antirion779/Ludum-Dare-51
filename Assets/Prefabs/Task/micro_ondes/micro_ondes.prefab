@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1537628927061370728}
   - component: {fileID: 6463663554388934637}
-  - component: {fileID: 4559510129316288169}
   - component: {fileID: 4101451196253652559}
   - component: {fileID: 7185864335468015752}
+  - component: {fileID: 2063671086661313413}
   m_Layer: 0
   m_Name: cup
   m_TagString: Untagged
@@ -87,20 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4559510129316288169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 95197225025131144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dee3476da8268e43b800feb37e96818, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 4101451196253652559}
-  canBeDrag: 1
 --- !u!50 &4101451196253652559
 Rigidbody2D:
   serializedVersion: 4
@@ -138,6 +124,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.5
+--- !u!114 &2063671086661313413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95197225025131144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c7c0502346795844889c00d988854b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBeDrag: 1
 --- !u!1 &3746864887026478160
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +213,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: d8fbca62359f47c4ebd678a04e6fc392, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae3c691dab2024b48900d99f8fcc2ba4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -242,7 +241,7 @@ MonoBehaviour:
   open: {fileID: 21300000, guid: d8fbca62359f47c4ebd678a04e6fc392, type: 3}
   closed_filed: {fileID: 21300000, guid: 577ccaf02905f6a46953d6dca3be7aeb, type: 3}
   sprtRdr: {fileID: 3720544330135078675}
-  microWaveState: 0
+  BC: {fileID: 2098747525292921980}
   is_filed: 0
   is_open: 0
 --- !u!61 &2098747525292921980
@@ -325,7 +324,12 @@ MonoBehaviour:
   microWave: {fileID: 3746864887026478160}
   microWaveArea: {fileID: 8613950045663447053}
   BC: {fileID: 4010125675399430310}
+  pos_task_1: {x: 0.7, y: -2.1}
+  pos_task_2: {x: -3.8, y: -2.3}
+  dezoom_cup: {fileID: 21300000, guid: 6755f2f84698dc842b7e9e4411f6813a, type: 3}
+  dezoom: {fileID: 21300000, guid: 05ce7530a8907504e98f82b724cbc69c, type: 3}
   colorSpeed: 0.01
+  is_first_task: 1
 --- !u!61 &4010125675399430310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -597,7 +601,7 @@ Transform:
   m_GameObject: {fileID: 6893665679128823622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.667, y: 0.667, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1108163094250390712}
@@ -644,7 +648,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 6755f2f84698dc842b7e9e4411f6813a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05ce7530a8907504e98f82b724cbc69c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -680,8 +684,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8613950045663447053}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.24, y: -0.2, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.49, y: -0.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

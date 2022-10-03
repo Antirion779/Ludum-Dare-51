@@ -42,6 +42,7 @@ public class Trash : MonoBehaviour
                 Destroy(file.gameObject);
                 text.text = "SYSTEM INTEGRITY<br>RESTORED";
                 text.color = new Color(0, 0, 0);
+                GameManager.Instance.reset();
                 Destroy(manager, 1f);
             } else
             {

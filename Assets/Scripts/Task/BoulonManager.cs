@@ -15,6 +15,7 @@ public class BoulonManager : MonoBehaviour
     public bool need_wait = false;
     public float colorSpeed = 0.01f;
     public Vector2 targetPoint = Vector2.zero;
+    public Vector2 offset = Vector2.zero;
     
     float nb_turn = 0.0f;
 
@@ -28,8 +29,9 @@ public class BoulonManager : MonoBehaviour
     {
         imageCapot = capot.gameObject.GetComponent<SpriteRenderer>();
         Reset();
-        //gameObject.SetActive(true);
-        //is_active = true;
+        gameObject.SetActive(true);
+        is_active = true;
+        targetPoint += offset;
     }
 
     void Reset()
@@ -57,7 +59,7 @@ public class BoulonManager : MonoBehaviour
                 if (!need_wait){
                     if (Input.GetMouseButton(0)){
                         Vector2 mousePoint = Input.mousePosition;
-                        mousePoint -= new Vector2(Screen.width/2,Screen.height/2);
+                        mousePoint -= new Vector2(Screen.width/2,Screen.height/2) + offset;
                         if (mousePoint != targetPoint){
                             Vector2 newVector = mousePoint - targetPoint;
                             if (was_pressed && newVector != last_vect){
@@ -75,7 +77,7 @@ public class BoulonManager : MonoBehaviour
                             was_pressed = true; 
 
                         }
-                        Debug.DrawRay(transform.position, last_vect, Color.blue);
+                        Debug.DrawRay(boulon.transform.position, last_vect, Color.blue);
                     }else if (Input.GetMouseButtonUp(0)){
                         last_vect = Vector2.zero;
                         was_pressed = false;

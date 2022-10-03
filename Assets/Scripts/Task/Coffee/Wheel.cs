@@ -72,6 +72,7 @@ public class Wheel : MonoBehaviour
         {
             coffeeCup.sprite = fullCoffee;
             complete = true;
+            GameManager.Instance.reset();
             Destroy(manager.gameObject, 1f);
         }
     }
