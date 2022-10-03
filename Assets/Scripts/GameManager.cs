@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     [SerializeField] private GameObject[] tasks;
     [SerializeField] public GameObject currentTask;
+    [SerializeField] private int currentTaskInt;
+    [SerializeField] private int lastTask;
+    [SerializeField] private int lastTaskBis; //eh c'est horrible faut jamais faire ça !!!! mais vas-y j'ai faim faut que je finisse ça rapidement 
 
     [Header("BackGround")]
     [SerializeField] private GameObject backGround;
@@ -75,6 +78,14 @@ public class GameManager : MonoBehaviour
         SoundManager.Instance.StopSanAndreas();
         SoundManager.Instance.PlaySound("taskin2");
         int i = Random.Range(0, tasks.Length);
+
+        lastTaskBis = lastTask;
+        lastTask = i;
+        Debug.Log("Current task : " + i + " / lastTask : " + lastTask + " / lastTaskBis : " + lastTaskBis);
+        while (lastTask == i || lastTaskBis == i)
+            i = Random.Range(0, tasks.Length);
+        lastTask = i;
+
         currentTask = Instantiate(tasks[i]);
         MeteorSpawner.Instance.questActive = true;
 
@@ -100,6 +111,8 @@ public class GameManager : MonoBehaviour
 
 
         Destroy(currentTask);
+
+       
 
         resetChrono = true;
         RocketScoring.Instance.score += RocketScoring.Instance.taskAddScore;
