@@ -58,9 +58,11 @@ public class GameManager : MonoBehaviour
     IEnumerator Alert()
     {
         redAlert.color = new Color(1, 0, 0, 0.2f);
+        SoundManager.Instance.PlaySound("emergency");
         yield return new WaitForSeconds(0.7f);
         redAlert.color = new Color(1, 0, 0, 0f);
         yield return new WaitForSeconds(0.3f);
+        SoundManager.Instance.PlaySound("emergency");
         redAlert.color = new Color(1, 0, 0, 0.2f);
         yield return new WaitForSeconds(0.7f);
         redAlert.color = new Color(1, 0, 0, 0f);
@@ -100,7 +102,7 @@ public class GameManager : MonoBehaviour
 
     public void ReturnToMainMenu()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Menu");
     }
 
 }
