@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     [SerializeField] private GameObject[] tasks;
-    [SerializeField] private GameObject currentTask;
+    [SerializeField] public GameObject currentTask;
 
     [Header("BackGround")]
     [SerializeField] private GameObject backGround;
@@ -63,6 +63,7 @@ public class GameManager : MonoBehaviour
     public void reset()
     {
         resetChrono = true;
+        RocketScoring.Instance.score += RocketScoring.Instance.taskAddScore;
         MeteorSpawner.Instance.questActive = false;
         MeteorSpawner.Instance.meteorSpeed += increaseSpeed;
     }

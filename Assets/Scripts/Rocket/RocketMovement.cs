@@ -9,7 +9,7 @@ public class RocketMovement : MonoBehaviour
     public float force = 200f;
     public Rigidbody2D rb;
 
-    private void Update()
+    /*private void Update()
     {
 
         if(rb.velocity.y > speedLimit)
@@ -21,6 +21,12 @@ public class RocketMovement : MonoBehaviour
         {
             rb.AddForce(new Vector2(0, force), ForceMode2D.Force);
         }
+    }*/
+
+    private void Update()
+    {
+
+        rb.velocity = new Vector2(0, Input.GetAxis("Horizontal") * speedLimit);
     }
 
 }

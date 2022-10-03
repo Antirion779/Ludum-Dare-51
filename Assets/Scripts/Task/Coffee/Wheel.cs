@@ -21,6 +21,9 @@ public class Wheel : MonoBehaviour
 
     public bool complete = false;
 
+    public AudioClip[] clips = new AudioClip[3];
+    public AudioSource wheelSource, coffeeSource;
+
 
     private void Update()
     {
@@ -52,6 +55,9 @@ public class Wheel : MonoBehaviour
                         angle -= 360;
                         nb_turn++;
                         StartCoroutine(PlayCoffeeAnimation());
+                        wheelSource.clip = clips[(int)nb_turn % 3];
+                        coffeeSource.Play();
+                        wheelSource.Play();
                     } else if(angle < 0)
                     {
                         angle = 0;
@@ -81,7 +87,7 @@ public class Wheel : MonoBehaviour
     IEnumerator PlayCoffeeAnimation()
     {
         coffeeShooter.sprite = coffeeShooterOn;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(1f);
         coffeeShooter.sprite = coffeeShooterOff;
     }
 
