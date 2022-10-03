@@ -72,6 +72,10 @@ public class BoulonManager : MonoBehaviour
                                 }
                                 boulon.transform.eulerAngles = - Vector3.forward * angle;
                                 nb_turn = angle/360;
+                                if (!SoundManager.Instance.source.isPlaying){
+                                    SoundManager.Instance.PlaySound("screw");
+                                }
+                                    
                             }
                             last_vect = newVector;
                             was_pressed = true; 
