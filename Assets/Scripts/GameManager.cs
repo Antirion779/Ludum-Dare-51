@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public SpriteRenderer redAlert;
     public GameObject taskComplete;
     public Animator rocketAnimator;
+    public AudioSource mainMusic;
 
     public bool resetChrono = true;
 
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(Alert());
         yield return new WaitForSeconds(2f);
         StartTask();
+        SetMainMusic(true);
         Debug.Log("After");
         //lance un mini jeu
     }
@@ -139,6 +141,11 @@ public class GameManager : MonoBehaviour
         Debug.Log("fkjh vgfedugvdfjkhvb");
         Time.timeScale = 1;
         SceneManager.LoadScene("Menu");
+    }
+
+    public void SetMainMusic(bool state)
+    {
+        mainMusic.volume = state ? 0f : 1f;
     }
 
 }

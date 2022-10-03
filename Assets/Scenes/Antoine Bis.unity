@@ -257,7 +257,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1905988889}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ReturnToMainMenu
         m_Mode: 1
@@ -412,6 +412,11 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -20
+--- !u!1 &443107955 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1394976449358320781, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
+  m_PrefabInstance: {fileID: 1667455285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &633245221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2316,7 +2321,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
 --- !u!1 &1711527468
 GameObject:
@@ -2766,17 +2772,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1905988889 stripped
+--- !u!114 &1905988891
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
-  m_PrefabInstance: {fileID: 1667455285}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 443107955}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68daff8a23a95dd42a9359903ddf3eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tasks:
+  - {fileID: 440902063976260524, guid: d4083081baf72774183beb2e5af506f5, type: 3}
+  - {fileID: 4462304070062060185, guid: c1ef961d00de7cf4886efee0d9134ce6, type: 3}
+  - {fileID: 1583689845143551828, guid: bc3f75e7c9452d846a4577b33003487f, type: 3}
+  - {fileID: 6796139473634080980, guid: c6c591de6c65127489b40dd1e81e1c89, type: 3}
+  - {fileID: 6951847285761221150, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
+  - {fileID: 7013046614891612149, guid: 3362e1a3826f5924b8efc830ba175441, type: 3}
+  - {fileID: 6951847285761221150, guid: 5dee640927ab4aa4881d896266ea1425, type: 3}
+  - {fileID: 3582536667474389729, guid: af27a25a63b65a54da1def6954c2be75, type: 3}
+  - {fileID: 406279622063670979, guid: d9b50f2adc392264bb0f037449bdca4a, type: 3}
+  - {fileID: 411096312153234609, guid: 30ab5feae0647294c8131183699cea2c, type: 3}
+  currentTask: {fileID: 0}
+  currentTaskInt: 0
+  lastTask: 0
+  lastTaskBis: 0
+  backGround: {fileID: 424603197}
+  backGroundSpeed: 0.35
+  increaseSpeed: 0.5
+  pauseMenu: {fileID: 192335149}
+  redAlert: {fileID: 1341708492}
+  taskComplete: {fileID: 0}
+  rocketAnimator: {fileID: 1081442577}
+  mainMusic: {fileID: 1711527474}
+  resetChrono: 1
 --- !u!1 &2098143033
 GameObject:
   m_ObjectHideFlags: 0
