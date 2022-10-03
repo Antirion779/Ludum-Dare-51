@@ -96,10 +96,14 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         SoundManager.Instance.PlaySound("taskout2");
 
+
+        Destroy(currentTask);
+
         resetChrono = true;
         RocketScoring.Instance.score += RocketScoring.Instance.taskAddScore;
         MeteorSpawner.Instance.questActive = false;
         MeteorSpawner.Instance.meteorSpeed += increaseSpeed;
+
 
         if (MeteorSpawner.Instance.timeBeforeSpawn > 0.3f)
             MeteorSpawner.Instance.timeBeforeSpawn -= 0.1f;
