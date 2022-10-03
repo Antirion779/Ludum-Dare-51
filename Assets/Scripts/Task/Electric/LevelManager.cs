@@ -27,5 +27,6 @@ public class LevelManager : MonoBehaviour
         }
         GameManager.Instance.reset();
         Destroy(manager, 1f);
+        Destroy(this);
     }
 }

@@ -15,6 +15,7 @@ public class TacheManager : MonoBehaviour
         }
         GameManager.Instance.reset();
         Destroy(gameObject, 1f);
+        Destroy(this);
     }
 
 }

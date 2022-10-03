@@ -74,6 +74,7 @@ public class Wheel : MonoBehaviour
             complete = true;
             GameManager.Instance.reset();
             Destroy(manager.gameObject, 1f);
+            Destroy(this);
         }
     }
 

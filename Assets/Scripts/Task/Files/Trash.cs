@@ -44,6 +44,7 @@ public class Trash : MonoBehaviour
                 text.color = new Color(0, 0, 0);
                 GameManager.Instance.reset();
                 Destroy(manager, 1f);
+                Destroy(this);
             } else
             {
                 file.gameObject.transform.position = file.startPosition;

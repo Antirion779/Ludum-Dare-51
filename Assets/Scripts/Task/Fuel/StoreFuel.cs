@@ -52,6 +52,7 @@ public class StoreFuel : MonoBehaviour
             {
                 GameManager.Instance.reset();
                 Destroy(manager, 1f);
+                Destroy(this);
             } else
             {
                 fill.transform.localScale = new Vector3(totalFill, fill.transform.localScale.y, fill.transform.localScale.z);

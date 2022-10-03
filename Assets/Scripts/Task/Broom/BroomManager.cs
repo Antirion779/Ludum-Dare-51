@@ -11,7 +11,8 @@ public class BroomManager : MonoBehaviour
         if(dust.Count == 0)
         {
             GameManager.Instance.reset();
-            Destroy(gameObject, 1f) ;
+            Destroy(gameObject, 1f);
+            Destroy(this);
         }
     }
 }

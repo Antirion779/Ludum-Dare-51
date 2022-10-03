@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     public float increaseSpeed = 0.05f;
 
-    private bool resetChrono = true;
+    public bool resetChrono = true;
 
     private void Awake()
     {
