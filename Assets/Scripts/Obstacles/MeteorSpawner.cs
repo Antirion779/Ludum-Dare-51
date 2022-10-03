@@ -10,6 +10,7 @@ public class MeteorSpawner : MonoBehaviour
     public bool questActive = false;
     public bool canSpawn = true;
     public float meteorSpeed = 0.35f;
+    public float timeBeforeSpawn = 2f;
 
     public List<GameObject> meteorsList;
 
@@ -37,7 +38,7 @@ public class MeteorSpawner : MonoBehaviour
             instance.transform.localScale = new Vector3(size, size, 0);
             instance.GetComponent<Meteor>().speed = meteorSpeed;
             Destroy(instance, 10f);
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(timeBeforeSpawn);
             canSpawn = true;
         }
     }

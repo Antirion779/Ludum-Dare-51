@@ -322,6 +322,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eb6518d90dc97b4b8ba58b7c27db866, type: 3}
+--- !u!1 &633245222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8998563275492867771, guid: 8eb6518d90dc97b4b8ba58b7c27db866, type: 3}
+  m_PrefabInstance: {fileID: 633245221}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &659483097
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,8 +389,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0ddd30db20c3bba4d97ec1ee1d161a4c, type: 2}
+  m_sharedMaterial: {fileID: 2376460339865773048, guid: 0ddd30db20c3bba4d97ec1ee1d161a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -627,6 +632,7 @@ MonoBehaviour:
   questActive: 0
   canSpawn: 1
   meteorSpeed: 2
+  timeBeforeSpawn: 2
   meteorsList: []
 --- !u!61 &945127125
 BoxCollider2D:
@@ -793,6 +799,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8998563275492867774, guid: 8eb6518d90dc97b4b8ba58b7c27db866, type: 3}
   m_PrefabInstance: {fileID: 633245221}
   m_PrefabAsset: {fileID: 0}
+--- !u!210 &1021619792
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633245222}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -7
 --- !u!1 &1071615170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1972,7 +1989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: tasks.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: tasks.Array.data[0]
@@ -2006,6 +2023,10 @@ PrefabInstance:
       propertyPath: tasks.Array.data[7]
       value: 
       objectReference: {fileID: 411096312153234609, guid: 30ab5feae0647294c8131183699cea2c, type: 3}
+    - target: {fileID: 1394976449358320782, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
+      propertyPath: tasks.Array.data[8]
+      value: 
+      objectReference: {fileID: 3582536667474389729, guid: af27a25a63b65a54da1def6954c2be75, type: 3}
     - target: {fileID: 1394976449358320783, guid: f91eef00d248be3428bf70d68d804d01, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2089,6 +2110,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 65f6cca0e83deae459d71dd2d878fc09, type: 3}
   - {fileID: 8300000, guid: 119d6cf968295fd4e9c6941a2bb24346, type: 3}
   - {fileID: 8300000, guid: 45be3e6f31614e8409037fc9a60fe155, type: 3}
+  - {fileID: 8300000, guid: 81a68d793e88a4c4a8a2878386e82e1c, type: 3}
+  - {fileID: 8300000, guid: 8fd3541347bc34947bf751d1b153c550, type: 3}
   mainSource: {fileID: 1711527472}
   source: {fileID: 1711527470}
 --- !u!82 &1711527470

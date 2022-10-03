@@ -95,6 +95,7 @@ public class BoulonManager : MonoBehaviour
                         need_wait = true;
                     }
                 }else{
+                    SoundManager.Instance.PlaySound("opencapot2");
                     Color tempColor = imageCapot.color;
                     tempColor.a -= colorSpeed;
                     imageCapot.color = tempColor;
