@@ -72,6 +72,7 @@ public class GameManager : MonoBehaviour
     private void StartTask()
     {
         SoundManager.Instance.StopSanAndreas();
+        SoundManager.Instance.PlaySound("taskin2");
         int i = Random.Range(0, tasks.Length);
         currentTask = Instantiate(tasks[i]);
         MeteorSpawner.Instance.questActive = true;

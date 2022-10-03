@@ -40,7 +40,7 @@ public class SoundManager : MonoBehaviour
     }
 
     public void StopSanAndreas(){
-        if(mainSource.clip.name == "sanandreas")
+        if(mainSource.clip != null && mainSource.clip.name == "sanandreas")
             {
                 mainSource.clip = null;
                 mainSource.Stop();
