@@ -1211,6 +1211,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - {fileID: 8300000, guid: 975f39bc90a135d4e98eb7c530aa2657, type: 3}
+  - {fileID: 8300000, guid: 1cb2ab6d706116545a766771df78d3d0, type: 3}
+  - {fileID: 8300000, guid: 65f6cca0e83deae459d71dd2d878fc09, type: 3}
+  - {fileID: 8300000, guid: 119d6cf968295fd4e9c6941a2bb24346, type: 3}
+  - {fileID: 8300000, guid: 45be3e6f31614e8409037fc9a60fe155, type: 3}
   mainSource: {fileID: 1711527472}
   source: {fileID: 1711527470}
 --- !u!82 &1711527470

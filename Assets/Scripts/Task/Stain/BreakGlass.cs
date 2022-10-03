@@ -17,5 +17,6 @@ public class BreakGlass : MonoBehaviour
         chiffonCollider.enabled = true;
         glass.sprite = shattered;
         glass.sortingOrder = 2;
+        SoundManager.Instance.PlaySound("glass2");
     }
 }

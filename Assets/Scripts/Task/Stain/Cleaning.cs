@@ -14,6 +14,7 @@ public class Cleaning : MonoBehaviour
         {
             sprite.color = new Color(0.3443396f, 1.0f, 0.4134772f, sprite.color.a - diff);
             Debug.Log(sprite.color.a);
+            if(!SoundManager.Instance.source.isPlaying) SoundManager.Instance.PlaySound("wipe"+Random.Range(1,4));
 
             if (sprite.color.a <= 0)
             {
