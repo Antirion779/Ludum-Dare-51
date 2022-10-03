@@ -738,6 +738,7 @@ GameObject:
   - component: {fileID: 964299606}
   - component: {fileID: 964299609}
   - component: {fileID: 964299608}
+  - component: {fileID: 964299610}
   - component: {fileID: 964299607}
   m_Layer: 3
   m_Name: Button
@@ -861,6 +862,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964299605}
   m_CullTransparentMesh: 1
+--- !u!114 &964299610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964299605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd4867835344b6c48a3420efd826c18c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1021619791 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8998563275492867774, guid: 8eb6518d90dc97b4b8ba58b7c27db866, type: 3}
@@ -2310,6 +2323,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 48a2956c092357d4899b02a702d79525, type: 3}
   - {fileID: 8300000, guid: 81a68d793e88a4c4a8a2878386e82e1c, type: 3}
   - {fileID: 8300000, guid: 57ad9568e7e727f43a62dece04b95d88, type: 3}
+  - {fileID: 8300000, guid: b1dca04a6bf383545bc9070200e10678, type: 3}
+  - {fileID: 8300000, guid: e5f04c57ea06f45419012bca82202c2d, type: 3}
   mainSource: {fileID: 1711527473}
   source: {fileID: 1711527470}
 --- !u!82 &1711527470
