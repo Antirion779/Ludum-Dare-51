@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public GameObject pauseMenu;
     public SpriteRenderer redAlert;
     public GameObject taskComplete;
+    public Animator rocketAnimator;
 
     public bool resetChrono = true;
 
@@ -127,6 +128,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator Kill()
     {
         Time.timeScale = 0f;
+        rocketAnimator.Play("Explosion");
         yield return new WaitForSecondsRealtime(1f);
         Time.timeScale = 1f;
         Application.LoadLevel(Application.loadedLevel);
