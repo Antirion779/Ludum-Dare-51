@@ -217,10 +217,11 @@ MonoBehaviour:
   manager: {fileID: 4462304070062060185}
   complete: 0
   clips:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  source: {fileID: 5778713147291602928}
+  - {fileID: 8300000, guid: bb9c54c5e3bdf3f40aa190bba9cee18f, type: 3}
+  - {fileID: 8300000, guid: 9e7e2a81a529c5744bdb3aa5078ee2ea, type: 3}
+  - {fileID: 8300000, guid: 994a9ab19985b864790c643311de381f, type: 3}
+  wheelSource: {fileID: 5778713147291602928}
+  coffeeSource: {fileID: 5222357122138609434}
 --- !u!58 &4462304068818590376
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -343,7 +344,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1762c0360771e9b48955d074b7d1ea3d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
