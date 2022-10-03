@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1583689845143551830}
   - component: {fileID: 1583689845143551831}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: -- ELECTRIC MANAGER --
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4535984021094033771}
   - component: {fileID: 3822070075388942882}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: quest_window
   m_TagString: Untagged
   m_Icon: {fileID: 0}

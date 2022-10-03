@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8622947237407734744}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FillBar
   m_TagString: Untagged
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -42,7 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7151462755348332472}
   - component: {fileID: 8591551108797059697}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FillBarSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5891693220080200111}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FullFillBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8627764014196024157}
   - component: {fileID: 5589457065766026022}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: quest_window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8068038062219073117}
   - component: {fileID: 386607892404912926}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NeedsCoffee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 3036346363582618768}
   - component: {fileID: 2447736103681336243}
   - component: {fileID: 6824587445801052508}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Capet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8050075801236476689}
   - component: {fileID: 6001644909366690727}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NeedsWater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -531,7 +531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4519341868613752065}
   - component: {fileID: 6769623723317811791}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FillBarBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,7 +615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2485847849747808836}
   - component: {fileID: 7924639186219213544}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -702,7 +702,7 @@ GameObject:
   - component: {fileID: 6951847285251347829}
   - component: {fileID: 6951847285251347828}
   - component: {fileID: 6951847285251347831}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -848,7 +848,7 @@ GameObject:
   - component: {fileID: 6951847285659719699}
   - component: {fileID: 6919867701504176538}
   - component: {fileID: 3608102138872785314}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FuelContainerOpenSide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -976,7 +976,7 @@ GameObject:
   - component: {fileID: 6951847285743823461}
   - component: {fileID: 6951847285743823460}
   - component: {fileID: 6951847285743823463}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Coffee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1119,7 +1119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6951847285761221151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: -- FUEL MANAGER --
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1164,7 +1164,7 @@ GameObject:
   - component: {fileID: 6951847285902156666}
   - component: {fileID: 6951847285902156669}
   - component: {fileID: 6951847285902156668}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1308,7 +1308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6951847286002055829}
   - component: {fileID: 6951847286002055826}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1367,7 +1367,7 @@ GameObject:
   - component: {fileID: 6951847286536185492}
   - component: {fileID: 6951847286536185490}
   - component: {fileID: 6951847286536185493}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1434,7 +1434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8087036056884625833}
   - component: {fileID: 6317901407478972236}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NeedsGas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 440902062515818589}
   - component: {fileID: 440902062515818590}
   - component: {fileID: 440902062515818591}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dust_1
   m_TagString: Dust
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 440902062681133863}
   - component: {fileID: 440902062681133862}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 440902062807688759}
   - component: {fileID: 440902062807688761}
   - component: {fileID: 440902062807688758}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 440902063214595575}
   - component: {fileID: 440902063214595574}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 440902063246877706}
   - component: {fileID: 440902063246877707}
   - component: {fileID: 440902063246877705}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Poubelle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,7 +543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 440902063976260523}
   - component: {fileID: 440902063976260522}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: -- BROOM MANAGER --
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 440902064347620080}
   - component: {fileID: 440902064347620081}
   - component: {fileID: 440902064347620082}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dust
   m_TagString: Dust
   m_Icon: {fileID: 0}
@@ -723,7 +723,7 @@ GameObject:
   - component: {fileID: 440902064427585250}
   - component: {fileID: 440902064427585251}
   - component: {fileID: 440902064427585252}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dust_2
   m_TagString: Dust
   m_Icon: {fileID: 0}
@@ -844,7 +844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 440902064459222912}
   - component: {fileID: 440902064459222943}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -902,7 +902,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5221815893181967555}
   - component: {fileID: 6050424603426464055}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: quest_window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
