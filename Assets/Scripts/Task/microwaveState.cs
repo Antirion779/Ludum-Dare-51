@@ -32,7 +32,7 @@ public class microwaveState : MonoBehaviour
                     sprtRdr.sprite = open;
                     transform.parent.GetComponent<MicroOndesManager>().cup.SetActive(true);
                     if (!transform.parent.GetComponent<MicroOndesManager>().is_first_task){
-                        transform.parent.GetComponent<MicroOndesManager>().cup.GetComponent<DragObjectReal>().canBeDrag = true;
+                        transform.parent.GetComponent<MicroOndesManager>().cup.GetComponent<DragObject>().canBeDrag = true;
                         transform.parent.GetComponent<MicroOndesManager>().cup.GetComponent<Rigidbody2D>().simulated = true;
                         BC.enabled = false;
                     }

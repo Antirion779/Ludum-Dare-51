@@ -100,7 +100,7 @@ public class MicroOndesManager : MonoBehaviour
     }
 
     void Set_active(bool b = true){
-        cup.GetComponent<DragObjectReal>().canBeDrag = b;
+        cup.GetComponent<DragObject>().canBeDrag = b;
         MCWState.is_active = b;
     }
 

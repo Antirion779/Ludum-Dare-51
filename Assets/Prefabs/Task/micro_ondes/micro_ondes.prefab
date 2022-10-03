@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1537628927061370728}
   - component: {fileID: 6463663554388934637}
-  - component: {fileID: 4559510129316288169}
   - component: {fileID: 4101451196253652559}
   - component: {fileID: 7185864335468015752}
+  - component: {fileID: 2063671086661313413}
   m_Layer: 0
   m_Name: cup
   m_TagString: Untagged
@@ -87,20 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4559510129316288169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 95197225025131144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dee3476da8268e43b800feb37e96818, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 4101451196253652559}
-  canBeDrag: 1
 --- !u!50 &4101451196253652559
 Rigidbody2D:
   serializedVersion: 4
@@ -138,6 +124,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.5
+--- !u!114 &2063671086661313413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95197225025131144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c7c0502346795844889c00d988854b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBeDrag: 1
 --- !u!1 &3746864887026478160
 GameObject:
   m_ObjectHideFlags: 0

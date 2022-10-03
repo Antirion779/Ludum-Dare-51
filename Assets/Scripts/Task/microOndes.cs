@@ -13,7 +13,7 @@ public class microOndes : MonoBehaviour
             }else{
                 transform.parent.GetComponent<microwaveState>().is_filed = true;
             }
-            other.GetComponent<DragObjectReal>().canBeDrag = false;
+            other.GetComponent<DragObject>().canBeDrag = false;
             other.gameObject.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
             other.gameObject.transform.rotation = Quaternion.identity;
             other.GetComponent<Rigidbody2D>().simulated = false;
