@@ -71,6 +71,7 @@ public class GameManager : MonoBehaviour
 
     private void StartTask()
     {
+        SoundManager.Instance.StopSanAndreas();
         int i = Random.Range(0, tasks.Length);
         currentTask = Instantiate(tasks[i]);
         MeteorSpawner.Instance.questActive = true;
@@ -103,6 +104,7 @@ public class GameManager : MonoBehaviour
     public void ReturnToMainMenu()
     {
         SceneManager.LoadScene("Menu");
+        Time.timeScale = 1;
     }
 
 }

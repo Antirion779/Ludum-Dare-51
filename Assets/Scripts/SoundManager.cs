@@ -26,6 +26,27 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    public void PlayMusic(string name)
+    {
+        foreach(AudioClip sound in sounds)
+        {
+            Debug.Log(sound.name);
+            if(sound.name == name)
+            {
+                mainSource.clip = sound;
+                mainSource.Play();
+            }
+        }
+    }
+
+    public void StopSanAndreas(){
+        if(mainSource.clip.name == "sanandreas")
+            {
+                mainSource.clip = null;
+                mainSource.Stop();
+            }
+    }
+
     public void ReplaceBackSound(string name)
     {
         foreach (AudioClip sound in sounds)

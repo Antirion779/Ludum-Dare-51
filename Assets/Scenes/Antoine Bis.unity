@@ -699,6 +699,7 @@ MonoBehaviour:
   questActive: 0
   canSpawn: 1
   meteorSpeed: 15
+  timeBeforeSpawn: 2
   meteorsList: []
 --- !u!61 &945127125
 BoxCollider2D:
@@ -2306,7 +2307,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 65f6cca0e83deae459d71dd2d878fc09, type: 3}
   - {fileID: 8300000, guid: 119d6cf968295fd4e9c6941a2bb24346, type: 3}
   - {fileID: 8300000, guid: 45be3e6f31614e8409037fc9a60fe155, type: 3}
-  mainSource: {fileID: 1711527472}
+  - {fileID: 8300000, guid: 48a2956c092357d4899b02a702d79525, type: 3}
+  - {fileID: 8300000, guid: 81a68d793e88a4c4a8a2878386e82e1c, type: 3}
+  - {fileID: 8300000, guid: 57ad9568e7e727f43a62dece04b95d88, type: 3}
+  mainSource: {fileID: 1711527473}
   source: {fileID: 1711527470}
 --- !u!82 &1711527470
 AudioSource:
@@ -2526,7 +2530,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1

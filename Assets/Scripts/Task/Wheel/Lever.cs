@@ -14,5 +14,6 @@ public class Lever : MonoBehaviour
         isActive = true;
         gloveWheel.SetActive(true);
         GetComponent<SpriteRenderer>().sprite = actived;
+        SoundManager.Instance.PlayMusic("sanandreas");
     }
 }
