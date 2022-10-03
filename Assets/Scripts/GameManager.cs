@@ -136,8 +136,9 @@ public class GameManager : MonoBehaviour
 
     public void ReturnToMainMenu()
     {
-        SceneManager.LoadScene("Menu");
+        Debug.Log("fkjh vgfedugvdfjkhvb");
         Time.timeScale = 1;
+        SceneManager.LoadScene("Menu");
     }
 
 }
